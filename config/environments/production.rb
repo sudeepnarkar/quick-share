@@ -84,7 +84,7 @@ Rails.application.configure do
 
 #Sets Paperclip to upload images on Amazon S3
 config.paperclip_defaults = {
-       storage => :s3,
+       storage => -s3,
        s3-region => ENV['AWS_REGION'],
        s3-credentials => {
         bucket => ENV['AWS_BUCKET'],
